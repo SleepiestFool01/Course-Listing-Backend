@@ -1,34 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Class List</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #f4f4f4; }
-        header { background: #333; color: #fff; padding: 1rem; text-align: center; }
-        nav { background: #444; padding: 0.5rem; text-align: center; }
-        nav a { color: #fff; margin: 0 1rem; text-decoration: none; }
-        main { padding: 2rem; }
-        footer { background: #333; color: #fff; text-align: center; padding: 1rem; position: fixed; width: 100%; bottom: 0; }
-    </style>
+  <meta charset="UTF-8">
+  <title>Class List</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    /* General Reset + Typography */
+    body {
+      font-family: "Segoe UI", Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f8f8f8;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    /* Header */
+    header {
+      background: #6b1d1d;
+      color: #fff;
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+      letter-spacing: 1px;
+    }
+
+    /* Hero Section with campus image */
+    .hero {
+      position: relative;
+      width: 100%;
+      height: 400px;
+      background: url("images/oc-campus.webp") center/cover no-repeat;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-shadow: 1px 1px 8px rgba(0, 0, 0, 0.7);
+    }
+    .hero h2 {
+      font-size: 2rem;
+      background: rgba(0,0,0,0.5);
+      padding: 1rem 2rem;
+      border-radius: 8px;
+    }
+
+    /* Logo styling */
+    .logo {
+      display: block;
+      margin: 2rem auto;
+      width: 200px;
+    }
+
+    /* Main content box */
+    main {
+      max-width: 800px;
+      margin: 2rem auto;
+      padding: 2rem;
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+    main h2 {
+      color: #6b1d1d;
+      margin-top: 0;
+    }
+    main p {
+      margin-bottom: 1.5rem;
+    }
+
+    /* Call-to-action button */
+    .btn {
+      display: inline-block;
+      background: #6b1d1d;
+      color: #fff;
+      padding: 0.75rem 1.5rem;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+    .btn:hover {
+      background: #922929;
+    }
+
+    /* Footer */
+    footer {
+      background: #333;
+      color: #fff;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 3rem;
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <h1>How to Register</h1>
-    </header>
+  <!-- Header -->
+  <header>
+    <h1>How to Register</h1>
+  </header>
 
-    <img src="images/oc-campus.webp" alt="Campus Image" width="1500" height="1000">
-    <img src="images/oc-logo.png" alt="Logo Image" width="255" height="255">
+  <!-- Hero image -->
+  <section class="hero">
+    <h2>Begin Your Journey at OC</h2>
+  </section>
 
+  <!-- Logo -->
+  <img src="images/oc-logo.png" alt="OC Logo" class="logo">
 
-    <main>
-        <h2>Get signed up!</h2>
-            <p>Begin your Computer Science journey by registering for classes at Oklahoma Christian University! You can apply in the link below.</p>
-            <li><a href="oc.edu"> Register Here!</a></li>   
+  <!-- Main content -->
+  <main>
+    <h2>Get signed up!</h2>
+    <p>
+      Begin your Computer Science journey by registering for classes at Oklahoma Christian University!
+      You can apply using the link below.
+    </p>
+    <a href="https://www.oc.edu" class="btn">Register Here</a>
+  </main>
 
-    <footer>
-        &copy; 2025 Class List
-    </footer>
+  <!-- Footer -->
+  <footer>
+    &copy; 2025 Class List
+  </footer>
 </body>
 </html>
