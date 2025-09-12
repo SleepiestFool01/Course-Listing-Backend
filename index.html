@@ -1,38 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Class List</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #f4f4f4; }
-        header { background: #333; color: #fff; padding: 1rem; text-align: center; }
-        nav { background: #444; padding: 0.5rem; text-align: center; }
-        nav a { color: #fff; margin: 0 1rem; text-decoration: none; }
-        main { padding: 2rem; }
-        footer { background: #333; color: #fff; text-align: center; padding: 1rem; position: fixed; width: 100%; bottom: 0; }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>OC Computer Science</title>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&family=K2D:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-    <header>
-        <h1>List of all of RJPT pages</h1>
+  <div class="page">
+    <nav class="utility-nav" aria-label="OC quick links">
+      <div class="utility-row">
+        <a class="utility-link" href="https://my.oc.edu/default/home/index" target="_blank" rel="noopener">myOC</a>
+        <a class="utility-link" href="https://www.oc.edu/" target="_blank" rel="noopener">OC Home</a>
+        <a class="utility-link" href="https://www.oc.edu/admissions" target="_blank" rel="noopener">Admissions</a>
+        <a class="utility-link" href="https://my.oc.edu/default/directory/index" target="_blank" rel="noopener">Directory</a>
+      </div>
+    </nav>
+
+    <header class="site-header">
+      <div class="header-row">
+        <div class="logo">
+          <span class="logo-oc">OC</span>
+          <div class="logo-text">
+            <span class="logo-top">Computer</span>
+            <span class="logo-bottom">Science</span>
+          </div>
+        </div>
+      </div>
+      <div class="header-accent"></div>
     </header>
 
     <main>
-        <h2>Select a Page</h2>
-        <p>Index of our website</p>
-           <li><a href="regisgter.html"> How to register</a></li>    
-           <li><a href="careers.html"> Learn about some careers</a></li>        
-           <li><a href="involvment.html"> How to get involved</a></li>
-           <li><a href="professors.html"> Meetr your professors</a></li>   
-           <li><a href="before.html"> Before you're here!!!</a></li>   
-           <li><a href="teaganTestimony.html"> Teagan</a></li>
-           <li><a href="parkerTestimony.html"> Parker</a></li> 
-           <li><a href="ryanTestimony.html"> Ryan</a></li> 
-           <li><a href="joeTestimony.html"> Joe</a></li> 
+      <section class="content-panel" aria-label="Main content">
+        <div class="features" aria-label="Main links">
+          <article class="feature-row">
+            <div 
+              class="thumb" aria-hidden="true"
+              style="background-image: url('images/careers.jpeg');">
+            </div>
+            <a class="pill-btn" href="careers.html">Careers</a>
+          </article>
 
-    <footer>
-        &copy; 2025 Class List
-    </footer>
+          <article class="feature-row flip">
+            <a class="pill-btn" href="professors.html">Meet Your Professors</a>
+            <div 
+              class="thumb" aria-hidden="true"
+              style="background-image: url('images/professors.jpeg');">
+            </div>
+          </article>
+
+          <article class="feature-row">
+            <div 
+              class="thumb" aria-hidden="true"
+              style="background-image: url('images/register.jpeg');">
+            </div>
+            <a class="pill-btn" href="register.html">Register For Classes</a>
+          </article>
+
+          <article class="feature-row flip">
+            <a class="pill-btn" href="involvement.html">How To Get Involved</a>
+            <div involvement.html
+              class="thumb" aria-hidden="true"
+              style="background-image: url('images/fanfare.jpeg');">
+            </div>
+            
+          </article>
+        </div>
+
+        <div class="mid-banner" aria-label="Announcement">
+          <div class="banner-black">Testimonials</div>
+          <div class="accent-bar inner"></div>
+        </div>
+
+        <footer class="site-footer">
+          <div class="footer-grid" role="list" aria-label="Footer links / socials">
+            <a role="listitem" class="footer-box" href="teaganTestimony.html" aria-label="Teagan's Testimony"style="background-image: url('images/teagan.jpeg');"></a>
+            <a role="listitem" class="footer-box" href="parkerTestimony.html" aria-label="Parker's Testimony" style="background-image: url('images/parker.jpeg');"></a>
+            <a role="listitem" class="footer-box" href="joeTestimony.html" aria-label="Joe's Testimony" style="background-image: url('images/joe.jpeg');"></a>
+            <a role="listitem" class="footer-box" href="ryanTestimony.html" aria-label="Ryan's Testimony" style="background-image: url('images/ryan.jpeg');"></a>
+          </div>
+          <div class="accent-bar inner bottom"></div>
+        </footer>
+      </section>
+    </main>
+  </div>
 </body>
 </html>
